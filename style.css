@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.details .details-text{
+    text-align: center;
+}
+
+.details .details-text h2 span{
+    color: hsl(223, 87%, 63%);
+}
+.details .details-text h1{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.details .details-text h1 span{
+    font-weight: bold;
+}
+
+.details .details-text p {
+    margin-top: 1rem;
+}
+
+.details-input{
+    padding: 18px;
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.details-input input{
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 0 18px;
+       font-size: 16px;
+}
+
+.details-input input::placeholder{
+   color: hsl(0, 0%, 59%);
+}
+
+.details-input button{
+    width: 200px;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: hsl(223, 87%, 63%);
+    font-weight: 300;
+    margin-left: 2rem;
+}
+
+.details-input button:hover{
+    cursor: pointer;
+}
+
+.img-details{
+    margin-top: 2rem;
+}
