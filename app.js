@@ -2,14 +2,22 @@ const input = document.querySelector( 'input' );
 const button = document.getElementById( 'button' );
 const paragraph = document.getElementById( 'validate-email' );
 
+function isEmailValid ( email )
+{
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test( email )
+}
 
+function Validate ()
+{
+    paragraph.textContent = 'Please provide a valid email address';
+    paragraph.classList.add( 'validate-email' )
+
+}
 
 button.addEventListener( 'click', ( e ) =>
 {
-    // paragraph.innerHTML = input
     if ( e ) {
-        console.log( 'Nice!' )
-        if ( input.value === 'three' ) {
+        if ( !isEmailValid( input.value ) ) {
             input.classList.add( 'input' )
             Validate();
             console.log( input.value )
@@ -18,10 +26,3 @@ button.addEventListener( 'click', ( e ) =>
     }
 
 } );
-
-function Validate ()
-{
-    paragraph.textContent = 'Please provide a valid email address';
-    paragraph.classList.add( 'validate-email' )
-
-}
