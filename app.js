@@ -20,9 +20,22 @@ button.addEventListener( 'click', ( e ) =>
         if ( !isEmailValid( input.value ) ) {
             input.classList.add( 'input' )
             Validate();
-            console.log( input.value )
+        } else {
+            return removeValidate();
         }
 
     }
 
 } );
+
+
+function removeValidate ()
+{
+
+    input.addEventListener( 'change', ( e ) =>
+    {
+        e.target.classList.remove( 'input' )
+
+    } )
+
+}
