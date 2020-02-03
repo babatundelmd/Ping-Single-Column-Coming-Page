@@ -57,7 +57,7 @@ body{
 }
 
 .input{
-    border: 2px solid hsl(354, 100%, 66%) !important;
+    border: 1px solid hsl(354, 100%, 66%) !important;
 }
 
 .details-input input::placeholder{
@@ -74,6 +74,10 @@ body{
     background-color: hsl(223, 87%, 63%);
     font-weight: 300;
     margin-left: 2rem;
+}
+.details-input button:hover{
+    box-shadow: 0 14px 28px hsla(224, 53%, 92%, 0.418), 0 10px 10px hsla(223, 69%, 66%, 0.5);
+    opacity: 0.9;
 }
 
 .details-input button:hover{
@@ -110,11 +114,21 @@ body{
     height: 32px;
 }
 
+/* .social div:hover{
+    background-color:hsl(223, 87%, 63%);
+    color: white;
+
+} */
+
 .social div i{
     margin: 3px;
     color: hsl(223, 87%, 63%);
     text-align: center;
 
+}
+
+.social div:hover{
+    cursor: pointer;
 }
 
 .copyright{
