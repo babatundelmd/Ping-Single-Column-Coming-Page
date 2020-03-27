@@ -112,13 +112,8 @@ body{
     margin-left: 18px !important;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
-
-/* .social div:hover{
-    background-color:hsl(223, 87%, 63%);
-    color: white;
-
-} */
 
 .social div i{
     margin: 3px;
@@ -128,8 +123,11 @@ body{
 }
 
 .social div:hover{
-    cursor: pointer;
+    background: hsl(223, 87%, 63%);
+    color: #fff;
 }
+
+
 
 .copyright{
     text-align: center;
